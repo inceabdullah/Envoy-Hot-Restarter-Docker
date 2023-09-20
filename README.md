@@ -31,7 +31,7 @@ docker run -e ENVOY_UID=0 -e ENVOY_GID=0 \
     envoy-hot-restart -c /etc/envoy/envoy.yaml --component-log-level upstream:debug,connection:trace
 ```
 
-**Note**: The `envoy.yaml` configuration file is shared in a folder because it cannot be modified within the container directly, as shown in the example above. You should place your `envoy.yaml` file in the `etc-envoy` directory on your host machine.
+**Note**: The `envoy.yaml` configuration file is shared in a folder because it cannot be synched in the container directly, as shown in the example above. You should place your `envoy.yaml` file in the `etc-envoy` directory on your host machine.
 
 ## Restarting Envoy
 
