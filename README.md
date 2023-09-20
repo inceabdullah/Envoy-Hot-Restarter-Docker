@@ -1,6 +1,6 @@
 # Envoy Hot Restarter Docker
 
-This repository provides a Docker image for running Envoy with the hot-restarter feature enabled using the `hot-restart.py` script. The `hot-restart.py` script is executed as part of the `entrypoint.sh`. This image allows you to easily configure and launch Envoy with the desired parameters.
+This repository provides a Docker image for running Envoy with the hot-restart feature enabled using the `hot-restart.py` script. The `hot-restart.py` script is executed as part of the `entrypoint.sh`. This image allows you to easily configure and launch Envoy with the desired parameters.
 
 ## Features
 
@@ -35,7 +35,7 @@ docker run -e ENVOY_UID=0 -e ENVOY_GID=0 \
 
 ## Restarting Envoy
 
-To gracefully restart Envoy using the hot-restarter feature, you can send the `HUP` signal to the container:
+To gracefully restart Envoy using the hot-restart feature, you can send the `HUP` signal to the container:
 
 ```bash
 docker kill envoy --signal HUP
