@@ -13,7 +13,7 @@ This repository provides a Docker image for running Envoy with the hot-restarter
 You can build the Docker image using the following command:
 
 ```bash
-docker build . -t envoy-hot-restart
+docker build . -t envoy-hot-restarter
 ```
 
 ## Example Usage
