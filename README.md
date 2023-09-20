@@ -24,7 +24,6 @@ To start Envoy using this Docker image, you can use a command like the following
 docker run -e ENVOY_UID=0 -e ENVOY_GID=0 \
     --restart always -dit --ipc host -v /dev:/dev \
     --net host \
-    -v $PWD/certs:/certs \
     -v $PWD/logs:/var/log \
     -v $PWD/etc-envoy:/etc/envoy \
     --name envoy \
